@@ -1,7 +1,16 @@
-<form action ="/tasks" method="post">
-<label for="name">Task Name</label>
-<input type="text" name="name">
+<h1>New task</h1>
 
-<label for="">
+<%= form_for(@task) do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+  <%= t.label :completed %>
+  <%= t.text_field :completed %>
+  <%= t.submit %>
+<% end %>
 
-</form>
+<br>
+<button class="btn">
+  <%= link_to "See all tasks", tasks_path %>
+</button>
