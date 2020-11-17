@@ -9,7 +9,7 @@ get '/tasks/new', to: 'tasks#new'
 post '/tasks', to: 'tasks#create'
 
 # read one singular task
-get '/tasks/:id', to: 'tasks#show'
+get '/tasks/:id', to: 'tasks#show', as: :show
 
 # edit one singular task
 get '/tasks/:id/edit', to: 'tasks#edit'

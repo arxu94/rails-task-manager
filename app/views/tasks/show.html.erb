@@ -1,0 +1,10 @@
+<h1><%= @task.title%></h1>
+<p><%= @task.details %><br>
+
+<input type="checkbox" id="status">
+  <label for="status">This task is completed</label>
+
+<br>
+<button class="btn">
+  <%= link_to "See all tasks", tasks_path %>
+</button>

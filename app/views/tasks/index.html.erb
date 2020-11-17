@@ -2,6 +2,5 @@
 
 <% @tasks.each do |task| %>
   <input type="checkbox">
-  <%= task.title%>
-
+  <%= link_to task.title, show_path(id: task.id)%>
   <% end%>
