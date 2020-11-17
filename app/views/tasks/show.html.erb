@@ -13,3 +13,8 @@
 <button class="btn">
   <%= link_to "Add new task", new_path %>
 </button>
+
+<br>
+<button class="btn">
+  <%= link_to "Edit task", edit_task_path(id: @task.id) %>
+</button>
